@@ -111,6 +111,11 @@ bcr.bar_chart_race(
     # adjust tick format
     tick_template='{x:,.0f}',
 
+    # setting filter_column_colors to `True` will map your colormap to just those 
+    # columns that make an appearance in the animation, helping
+    # avoid duplication of colors
+    filter_column_colors=True,
+
     # provide the name of folder that contains all the images
     img_label_folder='bar_image_labels',
 )
